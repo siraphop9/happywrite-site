@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Happy Write</title>
+    <style>
+      :root {
+        --bg: #f7f7fb;
+        --text: #16161c;
+        --muted: #55566a;
+        --accent: #4f5bf0;
+        --card: #ffffff;
+        --border: rgba(20, 22, 40, 0.1);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1c1c20;
+          --text: #f3f3f7;
+          --muted: #b4b5c3;
+          --accent: #8d97ff;
+          --card: #26262b;
+          --border: rgba(255, 255, 255, 0.1);
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Sukhumvit Set', Thonburi, sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+      h1 {
+        font-size: 30px;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 28px 0 6px;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 8px 24px 20px;
+        margin-top: 24px;
+      }
+      a {
+        color: var(--accent);
+      }
+      .updated {
+        font-size: 14px;
+      }
+      details { border-top: 1px solid var(--border); padding: 12px 0; }
+      details:first-of-type { border-top: 0; }
+      summary { cursor: pointer; font-weight: 600; color: var(--text); }
+      .hero { text-align: center; padding-top: 32px; }
+      .hero img { width: 96px; height: 96px; border-radius: 22px; }
+      .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+      .links a { padding: 10px 18px; border-radius: 999px; background: var(--card); border: 1px solid var(--border); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <img src="favicon.svg" alt="" />
+        <h1>Happy Write</h1>
+        <p>สมุดโน้ตลายมือสำหรับ iPad — เขียน จดบนไฟล์ PDF แต่งแพลนเนอร์ และทบทวนด้วยแฟลชการ์ด<br />A handwriting notebook for iPad — write, annotate PDFs, decorate planners and study with flashcards.</p>
+        <p>จ่ายครั้งเดียว ไม่มีรายเดือน · Pay once, no subscription</p>
+        <div class="links">
+          <a href="support.html">ช่วยเหลือ · Support</a>
+          <a href="privacy.html">ความเป็นส่วนตัว · Privacy</a>
+          <a href="mailto:happywrite.app@gmail.com">ติดต่อ · Contact</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Happy Write — Support / ช่วยเหลือ</title>
+    <style>
+      :root {
+        --bg: #f7f7fb;
+        --text: #16161c;
+        --muted: #55566a;
+        --accent: #4f5bf0;
+        --card: #ffffff;
+        --border: rgba(20, 22, 40, 0.1);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1c1c20;
+          --text: #f3f3f7;
+          --muted: #b4b5c3;
+          --accent: #8d97ff;
+          --card: #26262b;
+          --border: rgba(255, 255, 255, 0.1);
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Sukhumvit Set', Thonburi, sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+      h1 {
+        font-size: 30px;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 28px 0 6px;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 8px 24px 20px;
+        margin-top: 24px;
+      }
+      a {
+        color: var(--accent);
+      }
+      .updated {
+        font-size: 14px;
+      }
+      details { border-top: 1px solid var(--border); padding: 12px 0; }
+      details:first-of-type { border-top: 0; }
+      summary { cursor: pointer; font-weight: 600; color: var(--text); }
+      .hero { text-align: center; padding-top: 32px; }
+      .hero img { width: 96px; height: 96px; border-radius: 22px; }
+      .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+      .links a { padding: 10px 18px; border-radius: 999px; background: var(--card); border: 1px solid var(--border); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="./">← Happy Write</a></p>
+      <h1>Happy Write</h1>
+      <section lang="th">
+        <h2>ศูนย์ช่วยเหลือ</h2>
+        <p>มีคำถามหรือเจอปัญหา ส่งอีเมลมาที่ <a href="mailto:happywrite.app@gmail.com">happywrite.app@gmail.com</a> บอกรุ่น iPad และเวอร์ชัน iPadOS ด้วยจะช่วยให้ตอบได้เร็วขึ้น</p>
+        <details><summary>ซื้อ Pro แล้ว เปลี่ยนเครื่องหรือลงแอปใหม่ ทำยังไง</summary>
+          <p>เปิด การตั้งค่า → บัญชี → อัปเกรดเป็น Pro → กด "กู้คืนการซื้อ" (ใช้ Apple ID เดียวกับตอนซื้อ) ไม่มีการเรียกเก็บเงินซ้ำ</p></details>
+        <details><summary>ใช้ฟรีได้แค่ไหน Pro ได้อะไรเพิ่ม</summary>
+          <p>รุ่นฟรีใช้ปากกาและเครื่องมือทั้งหมด เทมเพลตกระดาษทุกแบบ เขียนบน PDF ซิงค์ iCloud และค้นหาลายมือได้ สร้างสมุดได้ 5 เล่ม Pro จ่ายครั้งเดียว ใช้ได้ตลอด ได้สมุดไม่จำกัด อัดเสียงไม่จำกัด และสติกเกอร์ทุกชุด</p></details>
+        <details><summary>ซิงค์ระหว่าง iPad และ iPhone</summary>
+          <p>การตั้งค่า → ซิงค์และสำรองข้อมูล → เปิดซิงค์ iCloud ทุกเครื่องต้องลงชื่อเข้าใช้ Apple ID เดียวกัน และเปิด iCloud Drive ไว้ โน้ตเก็บใน iCloud ของคุณเอง</p></details>
+        <details><summary>สำรองและกู้คืนข้อมูล</summary>
+          <p>การตั้งค่า → ซิงค์และสำรองข้อมูล → สร้างไฟล์สำรอง แอปยังสำรองให้อัตโนมัติทุกสัปดาห์ ดูได้ในแอป Files → ในไอแพด → Happy Write → Backups การกู้คืนจะเพิ่มสมุดเป็นสำเนา ไม่ทับของเดิม</p></details>
+        <details><summary>วางมือบนจอแล้วเขียน / เขียนด้วยนิ้ว</summary>
+          <p>เมื่อใช้ Apple Pencil แอปจะไม่วาดตามฝ่ามือหรือนิ้ว และนิ้วจะใช้เลื่อนหน้าแทน ถ้าไม่มี Apple Pencil เปิด "เขียนด้วยนิ้ว" ได้ที่ การตั้งค่า → ปากกาและการป้อนข้อมูล</p></details>
+        <details><summary>เลื่อนหน้าไปทางซ้าย-ขวาแทนขึ้น-ลง</summary>
+          <p>ในหน้าเขียน แตะเมนู "…" → เลื่อนหน้าแนวนอน</p></details>
+        <details><summary>ลบข้อมูลทั้งหมด</summary>
+          <p>การตั้งค่า → ซิงค์และสำรองข้อมูล → ลบข้อมูล Happy Write ออกจาก iCloud การลบแอปจะลบข้อมูลในเครื่องทั้งหมด ดูรายละเอียดใน <a href="privacy.html">นโยบายความเป็นส่วนตัว</a></p></details>
+      </section>
+      <section lang="en">
+        <h2>Support</h2>
+        <p>Questions or problems? Email <a href="mailto:happywrite.app@gmail.com">happywrite.app@gmail.com</a>. Including your iPad model and iPadOS version helps us answer faster.</p>
+        <details><summary>I bought Pro — how do I get it on a new iPad or after reinstalling?</summary>
+          <p>Open Settings → Account → Upgrade to Pro → tap “Restore purchase”, signed in with the Apple ID you bought it with. You won’t be charged again.</p></details>
+        <details><summary>What’s free, and what does Pro add?</summary>
+          <p>Free includes every pen and tool, all paper templates, PDF annotation, iCloud sync and handwriting search, with up to 5 notebooks. Pro is a one-time purchase that adds unlimited notebooks, unlimited audio recording and every sticker pack.</p></details>
+        <details><summary>Syncing between iPad and iPhone</summary>
+          <p>Settings → Sync &amp; backup → Turn on iCloud sync. Every device must be signed in to the same Apple ID with iCloud Drive on. Your notes are stored in your own iCloud.</p></details>
+        <details><summary>Backing up and restoring</summary>
+          <p>Settings → Sync &amp; backup → Create backup. The app also makes a backup every week, in the Files app → On My iPad → Happy Write → Backups. Restoring adds the notebooks as copies; nothing is overwritten.</p></details>
+        <details><summary>Palm resting on the screen / drawing with a finger</summary>
+          <p>Once you use an Apple Pencil, your palm and fingers don’t draw — fingers scroll instead. Without a Pencil, turn on “Draw with finger” in Settings → Pen &amp; input.</p></details>
+        <details><summary>Scrolling pages left and right instead of up and down</summary>
+          <p>In a notebook, tap the “…” menu → Scroll pages horizontally.</p></details>
+        <details><summary>Deleting all my data</summary>
+          <p>Settings → Sync &amp; backup → Delete Happy Write data from iCloud. Deleting the app removes everything on the device. See the <a href="privacy.html">privacy policy</a>.</p></details>
+      </section>
+    </main>
+  </body>
+</html>
