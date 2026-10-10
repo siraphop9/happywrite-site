@@ -75,7 +75,7 @@
         <p>สมุด หน้า ลายมือ ไฟล์ PDF รูปภาพ ไฟล์เสียง และการตั้งค่า ถูกเก็บไว้ในอุปกรณ์ของคุณ เราไม่ได้รับข้อมูลเหล่านี้ ไม่ว่าคุณจะเปิดการซิงค์หรือไม่</p>
         <h2>การซิงค์คลาวด์ (ไม่บังคับ)</h2>
         <p>
-          Happy Write ไม่มีเซิร์ฟเวอร์ของตัวเอง หากคุณเปิดการซิงค์ สำเนาโน้ตและไฟล์จะถูกเก็บในบัญชีคลาวด์ของคุณเอง ได้แก่ iCloud (บน iPhone/iPad)
+          Happy Write ไม่มีเซิร์ฟเวอร์ของตัวเอง หากคุณเปิดการซิงค์ สำเนาโน้ตและไฟล์จะถูกเก็บในบัญชีคลาวด์ของคุณเอง ได้แก่ iCloud (บน iPad)
           หรือโฟลเดอร์ส่วนตัวของแอปใน Google Drive (บน Android และเว็บ) ผู้พัฒนาเข้าถึงข้อมูลนี้ไม่ได้ และ Happy Write ขอสิทธิ์เฉพาะโฟลเดอร์ของแอปเท่านั้น
           จึงมองไม่เห็นไฟล์อื่นใน Google Drive ของคุณ ข้อมูลอยู่ภายใต้นโยบายของ Apple หรือ Google ตามบริการที่คุณใช้
         </p>
@@ -101,7 +101,7 @@
         <p>Notebooks, pages, handwriting, PDFs, images, audio recordings and settings are stored on your device. We never receive them, whether or not you turn on sync.</p>
         <h2>Cloud sync (optional)</h2>
         <p>
-          Happy Write has no servers of its own. If you turn on sync, a copy of your notes and files is stored in your own cloud account: iCloud (on iPhone and iPad)
+          Happy Write has no servers of its own. If you turn on sync, a copy of your notes and files is stored in your own cloud account: iCloud (on iPad)
           or a private app folder in your Google Drive (on Android and the web). The developer cannot access this data, and Happy Write only asks for access to its
           own app folder, so it cannot see your other Google Drive files. That data is governed by Apple’s or Google’s terms for the service you use.
         </p>
@@ -120,5 +120,18 @@
         <p>Questions: <a href="mailto:happywrite.app@gmail.com">happywrite.app@gmail.com</a></p>
       </section>
     </main>
+    <script>
+      // Show the reader's language first (?lang= from the app, else the browser's): Thai, or English for everyone else.
+      // Without JavaScript both sections simply stay in their written order.
+      (function () {
+        var asked = (new URLSearchParams(location.search).get('lang') || navigator.language || '').slice(0, 2).toLowerCase();
+        var wanted = asked === 'th' ? 'th' : 'en';
+        var section = document.querySelector('section[lang="' + wanted + '"]');
+        var first = document.querySelector('main > section');
+        if (!section || section === first) return;
+        first.parentNode.insertBefore(section, first);
+        document.documentElement.lang = wanted;
+      })();
+    </script>
   </body>
 </html>
